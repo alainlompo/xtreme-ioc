@@ -5,4 +5,13 @@
 	<bean id="helloWorldBean" class = "org.hypernovae.apis.beans.hello.HelloWorld">
 		<property name="name" value="Alain Lompo" />
 	</bean>
+	
+	<bean id="taxService" class="org.hypernovae.apis.beans.taxes.TaxService">
+		<property name="taxCalculator">
+			<ref bean="ITVATTaxCalculator" />
+		</property> 
+	</bean>
+	
+	<bean id="ITVATTaxCalculator" class="org.hypernovae.apis.beans.taxes.ITVATTaxCalculator" />
+	<bean id="MilkVATTaxCalculator" class="org.hypernovae.apis.beans.taxes.MilkVATTaxCalculator" />
 </beans>
