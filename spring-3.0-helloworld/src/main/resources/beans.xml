@@ -6,12 +6,22 @@
 		<property name="name" value="Alain Lompo" />
 	</bean>
 	
+<!-- 	Dependency injection through the setter of a property -->
 	<bean id="taxService" class="org.hypernovae.apis.beans.taxes.TaxService">
 		<property name="taxCalculator">
 			<ref bean="ITVATTaxCalculator" />
 		</property> 
 	</bean>
 	
+<!-- 	Dependency injection via the constructor -->
+	<bean id="hashPPC" class="org.hypernovae.apis.beans.pcs.PC" >
+		<constructor-arg>
+			<bean class="org.hypernovae.apis.beans.pcs.Fehdohra11" />
+		</constructor-arg>
+	</bean>
+	
+	<bean id="fehdohra11OS" class="org.hypernovae.apis.beans.pcs.Fehdohra11" />
+	<bean id="wineDozOS" class="org.hypernovae.apis.beans.pcs.WineDoz" />
 	<bean id="ITVATTaxCalculator" class="org.hypernovae.apis.beans.taxes.ITVATTaxCalculator" />
 	<bean id="MilkVATTaxCalculator" class="org.hypernovae.apis.beans.taxes.MilkVATTaxCalculator" />
 </beans>
