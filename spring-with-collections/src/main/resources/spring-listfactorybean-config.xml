@@ -1,0 +1,31 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="shopBean" class="org.hypernovae.apis.beans.collectible.Shop">
+		<property name="shopName" value="The Shining Street corner" />
+		<property name="articles">
+			<bean class = "org.springframework.beans.factory.config.ListFactoryBean">
+				<property name="targetListClass">
+					<value>java.util.ArrayList</value>
+				</property>
+				<property name="sourceList" >
+					<list>
+						<ref bean="stunningGlasses" />
+						<ref bean="makBukPro" />
+					</list>
+				</property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="stunningGlasses" class="org.hypernovae.apis.beans.collectible.Article">
+		<property name="designation" value="Stunning sun glasses" />
+		<property name="unitPrice" value="585.5" />
+	</bean>
+	
+	<bean id="makBukPro" class="org.hypernovae.apis.beans.collectible.Article">
+		<property name="designation" value="Awesome Mak buk Pro" />
+		<property name="unitPrice" value="18585.5" />
+	</bean>
+</beans>
