@@ -1,0 +1,56 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="company" class="org.hypernovae.apis.beans.collectible.Enterprise">
+		<property name="employees">
+			<list>
+				<bean class="org.hypernovae.apis.beans.collectible.Employee">
+					<property name="firstName" value="Alain" />
+					<property name="lastName" value="Lompo" />
+					<property name="empID" value="PID-12-36-78" />
+				</bean>
+				<bean class="org.hypernovae.apis.beans.collectible.Employee">
+					<property name="firstName" value="Mohamed" />
+					<property name="lastName" value="Elsam" />
+					<property name="empID" value="PID-1952-36-78" />
+				</bean>
+			</list>
+		</property>
+		<property name="services">
+			<set>
+				<ref bean="trainingService" />
+				<ref bean="devService" />
+			</set>
+			
+		</property>
+<!-- 		<property name="organisationMap"> -->
+<!-- 			<map> -->
+<!-- 				<entry key-ref="trainingService" value-ref="trainingEmployees" /> -->
+<!-- 				<entry key-ref="devService" value-ref="devEmployees" /> -->
+<!-- 			</map> -->
+<!-- 		</property> -->
+	</bean>
+	<bean id="trainingService" class="org.hypernovae.apis.beans.collectible.Service">
+		<property name="serviceName" value="The Training service" />
+		<property name="serviceDescription" value="That's the place where you learn great things" />
+	</bean>
+	
+	<bean id="devService" class="org.hypernovae.apis.beans.collectible.Service">
+		<property name="serviceName" value="The Development service" />
+		<property name="serviceDescription" value="That's where great people build great things" />
+	</bean>
+	
+	
+	
+	<bean id="bestDevEver" class="org.hypernovae.apis.beans.collectible.Employee">
+		<property name="firstName" value="High" />
+		<property name="lastName" value="Joe" />
+		<property name="empID" value="158-A-5658" />
+	</bean>
+	
+
+	
+</beans>
