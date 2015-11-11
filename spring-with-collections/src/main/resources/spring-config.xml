@@ -32,6 +32,39 @@
 <!-- 				<entry key-ref="devService" value-ref="devEmployees" /> -->
 <!-- 			</map> -->
 <!-- 		</property> -->
+		<property name="organisationMap">
+			<bean class="org.springframework.beans.factory.config.MapFactoryBean">
+				<property name="targetMapClass">
+					<value>java.util.HashMap</value>
+				</property>
+				<property name="sourceMap">
+					<map>
+						<entry>
+							<key>
+								<ref bean="devService" />
+<!-- 								<bean class="org.hypernovae.apis.beans.collectible.Service"> -->
+<!-- 									<property name="serviceName" value="service1" /> -->
+<!-- 									<property name="serviceDescription" value="description 1" /> -->
+<!-- 								</bean> -->
+							</key>
+							<list>
+								<ref bean="bestDevEver" />
+							</list>
+							
+						</entry>
+						<entry>
+							<key>
+								<ref bean="trainingService" />
+							</key>
+							<list>
+								<ref bean="bestTrainerEver" />
+							</list>
+						</entry>
+						
+					</map>
+				</property>
+			</bean>
+		</property>
 	</bean>
 	<bean id="trainingService" class="org.hypernovae.apis.beans.collectible.Service">
 		<property name="serviceName" value="The Training service" />
@@ -49,6 +82,12 @@
 		<property name="firstName" value="High" />
 		<property name="lastName" value="Joe" />
 		<property name="empID" value="158-A-5658" />
+	</bean>
+	
+	<bean id="bestTrainerEver" class="org.hypernovae.apis.beans.collectible.Employee">
+		<property name="firstName" value="Yop" />
+		<property name="lastName" value="Leh" />
+		<property name="empID" value="695-875-124" />
 	</bean>
 	
 

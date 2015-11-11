@@ -38,7 +38,7 @@ public class Enterprise {
 	public String toString() {
 		return "Employees: " + employees + " \n"
 				+ "Services: " + services + " \n"
-				/*+ "Organisation: " + organisationMap + " \n"*/;
+				+ "Organisation: " + organisationMap + " \n";
 	}
 	
 	
