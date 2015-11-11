@@ -4,6 +4,11 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	
+	<bean id="dateFormatter" class="java.text.SimpleDateFormat">
+		<constructor-arg value="dd/MM/yyyy" />
+	</bean>
+	
+	
 	<bean id="company" class="org.hypernovae.apis.beans.collectible.Enterprise">
 		<property name="employees">
 			<list>
@@ -11,6 +16,11 @@
 					<property name="firstName" value="Alain" />
 					<property name="lastName" value="Lompo" />
 					<property name="empID" value="PID-12-36-78" />
+					<property name="birthDate">
+						<bean factory-bean="dateFormatter" factory-method="parse" >
+							<constructor-arg value="11/11/2015" />
+						</bean>
+					</property> 
 				</bean>
 				<bean class="org.hypernovae.apis.beans.collectible.Employee">
 					<property name="firstName" value="Mohamed" />

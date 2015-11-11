@@ -1,10 +1,13 @@
 package org.hypernovae.apis.beans.collectible;
 
+import java.util.Date;
+
 public class Employee {
 
 	private String firstName;
 	private String lastName;
 	private String empID;
+	private Date birthDate;
 	public String getFirstName() {
 		return firstName;
 	}
@@ -24,8 +27,14 @@ public class Employee {
 		this.empID = empID;
 	}
 	
+	public Date getBirthDate() {
+		return birthDate;
+	}
+	public void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
+	}
 	public String toString() {
-		return "firstName and LastName :" + firstName + " " + lastName + ", ID :" + empID;
+		return "firstName and LastName :" + firstName + " " + lastName + ", ID :" + empID + ((birthDate != null)?" birthDate :" + birthDate.toString():"");
 	}
 	
 }
