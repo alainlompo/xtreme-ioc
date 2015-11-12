@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>pcconfig.properties</value>
+		</property>
+	</bean>
+	
+	<bean id="sawKneePC" class="org.hypernovae.apis.beans.configurable.MountedPC">
+		<property name="hardDriveSize" value="${pc.hardDriveSize}" />
+		<property name="keyboardType" value="${pc.keyboardType}" />
+		<property name="memoryAmount" value="${pc.memoryAmount}" />
+		<property name="screenSize" value="${pc.screenSize}" />
+		
+	</bean>
+	
+</beans>
