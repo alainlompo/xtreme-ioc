@@ -1,0 +1,4 @@
+# This bootstrap configuration file tells Seed to scan the org.hypernovae.webapps package
+
+[org.seedstack.seed]
+base-packages = org.hypernovae.webapps
