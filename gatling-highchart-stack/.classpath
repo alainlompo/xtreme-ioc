@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/scala">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**/*.java" including="**/*.java" kind="src" output="target/test-classes" path="src/test/resources"/>
+	<classpathentry kind="var" path="M2_REPO/io/gatling/highcharts/gatling-charts-highcharts/2.2.0-M2/gatling-charts-highcharts-2.2.0-M2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/gatling/gatling-charts/2.2.0-M2/gatling-charts-2.2.0-M2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/gatling/gatling-core/2.2.0-M2/gatling-core-2.2.0-M2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/scala-lang/scala-reflect/2.11.6/scala-reflect-2.11.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/typesafe/akka/akka-actor_2.11/2.3.9/akka-actor_2.11-2.3.9.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/dongxiguo/fastring_2.11/0.2.4/fastring_2.11-0.2.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/dataformat/jackson-dataformat-csv/2.5.2/jackson-dataformat-csv-2.5.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.5.1/jackson-core-2.5.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.5.2/jackson-databind-2.5.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.5.0/jackson-annotations-2.5.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.4.2/concurrentlinkedhashmap-lru-1.4.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.3/scala-parser-combinators_2.11-1.0.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/github/scopt/scopt_2.11/3.3.0/scopt_2.11-3.3.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/typesafe/scala-logging/scala-logging_2.11/3.1.0/scala-logging_2.11-3.1.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/gatling/jsonpath_2.11/0.6.4/jsonpath_2.11-0.6.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/fastjson/boon/0.32/boon-0.32.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sf/saxon/Saxon-HE/9.6.0-5/Saxon-HE-9.6.0-5.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jodd/jodd-lagarto/3.6.5/jodd-lagarto-3.6.5.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jodd/jodd-core/3.6.5/jodd-core-3.6.5.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jodd/jodd-log/3.6.5/jodd-log-3.6.5.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/tdunning/t-digest/3.1/t-digest-3.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/gatling/gatling-app/2.2.0-M2/gatling-app-2.2.0-M2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/gatling/gatling-http/2.2.0-M2/gatling-http-2.2.0-M2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/ning/async-http-client/1.9.18/async-http-client-1.9.18.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/netty/netty/3.10.1.Final/netty-3.10.1.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/scala-lang/modules/scala-xml_2.11/1.0.3/scala-xml_2.11-1.0.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/gatling/gatling-jms/2.2.0-M2/gatling-jms-2.2.0-M2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/gatling/gatling-jdbc/2.2.0-M2/gatling-jdbc-2.2.0-M2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/gatling/gatling-redis/2.2.0-M2/gatling-redis-2.2.0-M2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/debasishg/redisclient_2.11/2.15/redisclient_2.11-2.15.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-pool/commons-pool/1.6/commons-pool-1.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/gatling/gatling-metrics/2.2.0-M2/gatling-metrics-2.2.0-M2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/gatling/gatling-recorder/2.2.0-M2/gatling-recorder-2.2.0-M2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/scala-lang/modules/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/bouncycastle/bcpkix-jdk15on/1.52/bcpkix-jdk15on-1.52.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/bouncycastle/bcprov-jdk15on/1.52/bcprov-jdk15on-1.52.jar"/>
+	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
