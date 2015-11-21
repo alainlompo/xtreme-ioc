@@ -4,6 +4,8 @@ import java.util.Collections;
 
 import javax.annotation.PostConstruct;
 
+import org.hypernovae.apps.models.bank.Bank;
+import org.hypernovae.apps.models.bank.BankRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.*;
@@ -15,11 +17,15 @@ public class UserService implements UserDetailsService {
 	
 	@Autowired
 	private AccountRepository accountRepository;
+	@Autowired
+	private BankRepository bankRepository;
 	
 	@PostConstruct	
 	protected void initialize() {
 		accountRepository.save(new Account("user", "demo", "ROLE_USER"));
 		accountRepository.save(new Account("admin", "admin", "ROLE_ADMIN"));
+		bankRepository.save(new Bank("Big Bank Co", "001A", "ROLE_BANK_ADMIN"));
+		
 	}
 	
 	@Override

@@ -16,6 +16,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.hypernovae.apps.models.bank.BankRepository;
 
 @RunWith(MockitoJUnitRunner.class)
 public class UserServiceTest {
@@ -25,6 +26,9 @@ public class UserServiceTest {
 
 	@Mock
 	private AccountRepository accountRepositoryMock;
+	
+	@Mock
+	private BankRepository bankRepositoryMock;
 
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
