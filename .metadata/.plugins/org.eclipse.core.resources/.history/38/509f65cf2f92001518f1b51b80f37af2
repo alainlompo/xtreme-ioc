@@ -1,0 +1,8 @@
+package org.hypernovae.apps.models.invoice;
+
+public class Invoice {
+	private long quantity;
+	private BigDecimal unitPrice;
+	
+
+}

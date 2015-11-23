@@ -1,0 +1,12 @@
+package org.hypernovae.apps.models.invoice;
+
+import java.math.BigDecimal;
+
+public class Invoice {
+	private long quantity;
+	private BigDecimal unitPrice;
+	private String title;
+	private String description;
+	
+
+}
