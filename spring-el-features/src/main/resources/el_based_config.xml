@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="moduleBean" class="org.hypernovae.apis.beans.courses.Module" >
+		<property name="name" value="Socket Programming" />
+		<property name="durationInDays" value="2" /> 
+	</bean>
+	<bean id="classRoomBean" class="org.hypernovae.apis.beans.courses.Classroom" >
+		<property name="name" value="#{moduleBean.name} classroom" />
+		<property name="capacity" value="20" />
+	</bean>
+	
+
+</beans>
