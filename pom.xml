@@ -14,6 +14,7 @@
     <modules>
         <module>springmvc-simple-app</module>
 		<module>spring-el-features</module>
+    <module>spring-el-annotated</module>
   </modules>
 
     <build>
