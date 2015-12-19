@@ -1,5 +1,6 @@
 package org.hypernovae.apis;
 
+import org.hypernovae.apis.beans.Deal;
 import org.hypernovae.apis.beans.Geek;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -19,5 +20,8 @@ public class App
     	System.out.println("Does our geek have dot net skill?" + theAlmGeek.isDotNetSkill());
     	System.out.println("Does our geek have grail skill?" + theAlmGeek.isGrailSkill());
         
+    	Deal sampleDeal = (Deal)context.getBean("sampleDealBean");
+    	System.out.println("Here is the deal: " + sampleDeal);
+    	
     }
 }

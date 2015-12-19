@@ -6,6 +6,12 @@
 		<property name="javaSkill" value="#{true}" />
 		<property name="dotNetSkill" value="#{1>0}" />
 	</bean>
+	<bean id="standardValuesBean" class="org.hypernovae.apis.beans.StandardValues" />
+	<bean id="sampleDealBean" class="org.hypernovae.apis.beans.Deal">
+		<property name="numberOfArticles" value="#{standardValuesBean.DEAL_STANDARD_AMOUNT}" />
+		<property name="unitPrice" value="15.5" />
+		<property name="totalPrice" value="#{standardValuesBean.DEAL_STANDARD_AMOUNT * 15.5}" />
+	</bean>
 	
 
 </beans>
