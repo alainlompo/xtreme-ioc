@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="corporationBean" class="org.hypernovae.apis.beans.Corporation">
+		<property name="name" value="MegaHyperSoft" />
+		<property name="typeOfBusiness" value="Software Development" />
+	</bean>
+	
+	<bean id="personBean" class="org.hypernovae.apis.beans.Person">
+		<property name="name" value="Mohamed Elsam" />
+		<property name="monthlyIncome" value="12500" />
+		<property name="taxRateInPercent" value="10" />
+	</bean> 
+	
+	<bean id="taxServiceBean" class="org.hypernovae.apis.beans.TaxPaymentService" />
+	<bean id="personTaxReducerBean" class="org.hypernovae.apis.beans.PersonTaxReducer" />
+	<bean id="taxServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="target" ref="taxServiceBean" />
+		<property name="interceptorNames">
+			<list>
+				<value>personTaxReducerBean</value>
+			</list>
+		</property>
+	</bean>
+</beans>
