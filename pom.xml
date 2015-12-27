@@ -18,6 +18,7 @@
     <module>more-el-features</module>
     <module>spring-aop-features</module>
     <module>spring-xml-mapping</module>
+    <module>spring-email-manager</module>
   </modules>
 
     <build>
