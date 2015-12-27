@@ -17,6 +17,7 @@
     <module>spring-el-annotated</module>
     <module>more-el-features</module>
     <module>spring-aop-features</module>
+    <module>spring-xml-mapping</module>
   </modules>
 
     <build>
