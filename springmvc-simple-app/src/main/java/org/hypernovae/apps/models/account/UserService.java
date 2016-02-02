@@ -13,6 +13,11 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.*;
 
+/**
+ * An example of how to authenticate and set up the authenticated user details
+ * @author LOMPO
+ *
+ */
 public class UserService implements UserDetailsService {
 	
 	@Autowired

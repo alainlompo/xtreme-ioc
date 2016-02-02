@@ -23,6 +23,11 @@ class AccountController {
         this.accountRepository = accountRepository;
     }
 
+    /**
+     * Return the given principal's account
+     * @param principal
+     * @return
+     */
     @RequestMapping(value = "account/current", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     @ResponseBody

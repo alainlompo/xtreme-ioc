@@ -9,6 +9,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * A bank entity and an associate controller and repository (illustration purpose only)
+ * @author LOMPO
+ *
+ */
 @SuppressWarnings("serial")
 @Entity
 @Table(name = "bank")

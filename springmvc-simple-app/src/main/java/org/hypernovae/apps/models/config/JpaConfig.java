@@ -19,6 +19,11 @@ import org.springframework.transaction.annotation.TransactionManagementConfigure
 
 import org.hypernovae.apps.models.Application;
 
+/**
+ * Configures all the jpa parameters here so we have a datasource that is up and running
+ * @author LOMPO
+ *
+ */
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackageClasses = Application.class)
