@@ -12,6 +12,11 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.hypernovae.apps.models.account.*;
 import org.hypernovae.apps.models.support.web.*;
 
+/**
+ * Sign up controller
+ * @author LOMPO
+ *
+ */
 @Controller
 public class SignupController {
 

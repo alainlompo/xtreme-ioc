@@ -7,6 +7,13 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+/**
+ * Repository class for the Account entity. This approach is prior to the
+ * use of the JpaRepository interface (which makes it by far easier
+ * using convention over configuration)
+ * @author LOMPO
+ *
+ */
 @Repository
 @Transactional(readOnly = true)
 public class AccountRepository {
