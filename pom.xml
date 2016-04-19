@@ -23,6 +23,7 @@
     <module>spring-xml-mapping</module>
     <module>spring-email-manager</module>
     <module>spring-jdbc-integration</module>
+    <module>hyper-grator</module>
   </modules>
 
     <build>
