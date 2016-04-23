@@ -5,4 +5,6 @@
 This project is an indepth exploration of IOC and DI using various apis and frameworks to illustrate it. We mainly use the spring framework and Java/JEE, but from time to time some examples with other technologies and frameworks may pop. Below is a brief description of the main modules:<br/>
 <ul>
   <li><a href='https://github.com/alainlompo/xtreme-ioc/tree/master/spring-email-manager'>Spring e-mail manager</a>: demonstrates how to use spring mail</li>
+  <li><a href='https://github.com/alainlompo/xtreme-ioc/tree/master/springmvc-simple-app'>spring mvc simple app</a>:Illustrating the construction of a simple spring mvc app</li>
+  <li><a href='https://github.com/alainlompo/xtreme-ioc/tree/master/spring-xml-mapping'>spring xml mapping</a>:xml to object mapping with spring</li>
 </ul>
