@@ -5,6 +5,8 @@ import java.math.BigDecimal;
 public class OrderItem {
 	private BigDecimal price;
 	private BigDecimal discountedPrice;
+	private int quantity;
+	
 	public OrderItem() {}
 	public OrderItem(BigDecimal price) {
 		this.price = price;
@@ -22,5 +24,10 @@ public class OrderItem {
 	public void setDiscountedPrice(BigDecimal discountedPrice) {
 		this.discountedPrice = discountedPrice;
 	}
-	
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
 }
